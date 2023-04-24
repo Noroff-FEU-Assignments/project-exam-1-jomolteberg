@@ -1,0 +1,138 @@
+@import "../css/imports/links.css";
+@import "../css/imports/variables.css";
+
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-paragraph);
+    color: #fff;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--text-heading);
+    text-align: center;  /* Change this later? */
+    color: var(--color-black);
+    padding: 2rem;
+}
+
+p {
+    font-family: var(--text-paragraph);
+    color: var(--color-black);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Navigation */
+
+.nav-container {
+    width: 100%;
+    height: 82px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 auto;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 37px;
+    font-weight: 600;
+    color: #fff;
+    font-family: var(--text-heading);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 21px;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/homepage-bg.jpg) no-repeat center center/cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+.hero-container * {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white);
+    max-width: 550px;
+}
+
+.hero-header {
+    font-size: 1.5rem;
+    font-family: var(--text-hero);
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 1rem;
+    font-family: var(--text-paragraph);
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.blog-carousel {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 10%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+ 
+}
+
+.blog-post img {
+    width: 370px;
+    height: 305px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+
+  
