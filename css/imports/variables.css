@@ -1,6 +1,7 @@
 :root {
     --color-white: #fff;
-    --color-black: #000;
+    --color-black: #16161d;
+    --color-orange: hsla(11,100%,62.2%,1);
     --text-heading: "Oswald", serif;
     --text-paragraph: "Inter", sans-serif;
     --text-hero: "Secular One", sans-serif;

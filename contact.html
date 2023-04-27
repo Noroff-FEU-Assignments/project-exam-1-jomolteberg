@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful destinations | Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@400;500;700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="logo">
+          <a href="../index.html"> Beautiful destinations </a>
+        </div>
+        <div class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+          <li><a href="./blogList.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href=".contact.html" id="nav-menu_active">Contact</a></li>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-container">
+        <div class="hero-header">
+          <h1>CONTACT</h1>
+        </div>
+
+      </div>
+      <div class="containerContact">
+        <div class="containerForm">
+          <form action="" class="form">
+            <label for="name">
+              Name
+              <input
+                type="text"
+                placeholder="Your name"
+                name="name"
+                id="name"
+              />
+              <div class="formError" id="nameError">
+                Please enter your name
+              </div>
+            <label for="email">
+              Email
+              <input
+                type="email"
+                placeholder="you@email.com"
+                name="email"
+                id="email"
+              />
+              <div class="formError" id="emailError">
+                Please enter your email
+              </div>
+            </label>
+  
+            <label for="subject">
+              Subject
+              <input
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                id="subject"
+              />
+              <div class="formError" id="subjectError">
+                Please enter a subject
+              </div>
+            <label for="message">
+              Message
+              <textarea name="message" id="message" cols="40" rows="5">
+              </textarea>
+              <div class="formError" id="messageError">
+                Please enter your message
+              </div>
+            </label>
+            <button class="cta">Submit</button>
+          </form>
+        </div>
+        <div class="successMessage">The form was successfully submitted!</div>
+      </div>
+      </div>
+      
+     
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>&copy; jomolteberg</p>
+            </div>
+            <div class="footer-menu">
+            <li><a href="./blogList.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

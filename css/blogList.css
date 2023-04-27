@@ -1,0 +1,30 @@
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/california-1.jpg) no-repeat center center/cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+  
+.hero-container * {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white);
+    max-width: 550px;
+}
+
+.hero-header {
+    font-size: 1.5rem;
+    font-family: var(--text-hero);
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 1rem;
+    font-family: var(--text-paragraph);
+    line-height: 1.2;
+    font-weight: 500;
+}
