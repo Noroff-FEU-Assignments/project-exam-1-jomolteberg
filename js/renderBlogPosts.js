@@ -6,7 +6,7 @@ const wpRestBase = "/wp-json/wp/v2";
 const postsBase = "/posts";
 const imageBase = "/media";
 
-const fullBlogPostsURL = apiBase + wpRestBase + postsBase;
+const fullBlogPostsURL = `${apiBase}${wpRestBase}${postsBase}?per_page=100`;
 
 export async function getBlogPosts() {
   const response = await fetch(fullBlogPostsURL);
@@ -33,17 +33,19 @@ export async function createBlogPostsHTML(blogPosts) {
   }
 }
 
-export async function blogPostsPage() {
-
+export async function blogPostsPage(initialPostCount = 0) {
   const blogPostsContainer = document.querySelector(".blog-container");
   blogPostsContainer.innerHTML = "";
 
   const blogPosts = await getBlogPosts();
 
-  const carouselBlogPosts = blogPosts;
-  const nonCarouselBlogPosts = blogPosts;
+  if (initialPostCount > 0) {
+    const initialPosts = blogPosts.slice(0, initialPostCount);
+    createBlogPostsHTML(initialPosts);
+  }
 
-  createBlogPostsHTML(nonCarouselBlogPosts);
+  const carouselBlogPosts = blogPosts;
   createCarousel(carouselBlogPosts);
 }
+
 
