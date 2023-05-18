@@ -1,4 +1,5 @@
 export function createBlogPostHTML(blogPost, imageURL, container) {
+  
   const blogPostsContainer = container || document.querySelector(".blog-container");
 
   const blogPostContainer = document.createElement("div");
@@ -20,3 +21,4 @@ export function createBlogPostHTML(blogPost, imageURL, container) {
 
   blogPostsContainer.append(blogPostContainer);
 }
+
