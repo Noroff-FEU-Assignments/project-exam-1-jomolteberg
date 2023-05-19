@@ -23,12 +23,9 @@ export async function createCarousel(carouselBlogPosts) {
   const postCount = 3;
 
   function updateCarousel() {
-    console.log('Updating carousel, start index:', startIndex); 
     carouselContent.innerHTML = "";
     for (let i = 0; i < postCount; i++) {
       const index = (startIndex + i) % carouselBlogPosts.length;
-      console.log('Adding blog post at index:', index); 
-      console.log('Blog post:', carouselBlogPosts[index]); 
       const blogPost = carouselBlogPosts[index];
       const imageURL = imageURLs[index];
       createBlogPostHTML(blogPost, imageURL, carouselContent);
@@ -36,13 +33,11 @@ export async function createCarousel(carouselBlogPosts) {
   }
 
   prevButton.addEventListener('click', () => {
-    console.log('Previous button clicked'); 
     startIndex = (startIndex - postCount + carouselBlogPosts.length) % carouselBlogPosts.length;
     updateCarousel();
   });
   
   nextButton.addEventListener('click', () => {
-    console.log('Next button clicked');
     startIndex = (startIndex + postCount) % carouselBlogPosts.length;
     updateCarousel();
   });

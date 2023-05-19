@@ -7,7 +7,7 @@ export function createBlogPostHTML(blogPost, imageURL, container) {
   blogPostContainer.id = blogPost.id;
 
   const blogPostLink = document.createElement("a");
-  blogPostLink.href = `blog-post.html?id=${blogPost.id}`;
+  blogPostLink.href = `blogPost.html?id=${blogPost.id}`;
   blogPostContainer.append(blogPostLink);
 
   const img = document.createElement("img");

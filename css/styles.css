@@ -16,6 +16,8 @@ body {
 }
 
 main {
+    padding-top: 82px;
+    padding-bottom: 82px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -41,12 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--text-paragraph);
     color: var(--color-black);
+    line-height: 1.6;
 }
 
 h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-top: 2rem;
+    text-decoration: underline;
 }
 
 h3 {
