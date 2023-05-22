@@ -22,11 +22,6 @@
     line-height: 1.2;
 }
 
-.contactUs h3 {
-    margin-top: 2rem;
-    color: var(--color-orange);
-}
-
 .containerContact {
     display: flex;
     flex-direction: column;
