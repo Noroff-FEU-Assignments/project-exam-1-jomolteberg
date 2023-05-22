@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/media.css" />
 
     <script src="./js/main.js" defer type="module"></script>
+    <script src="./js/components/navBurger.js" defer type="module"> </script>
   </head>
   <body>
     <header>
@@ -31,6 +32,11 @@
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </div>
+        <button class="nav-burger" aria-expanded="false">
+          <div class="top-burger"></div>
+          <div class="mid-burger"></div>
+          <div class="bottom-burger"></div>
+        </button>
       </nav>
     </header>
 
@@ -46,6 +52,7 @@
             help you plan your next trip.
           </p>
         </div>
+        <a href="./blogList.html" class="hero-btn">Enter</a>
       </div>
 
       <div class="blog-latest">
@@ -59,9 +66,7 @@
       
 
       <h2>Featured posts</h2>
-      <div class="blog-container">
-        <!-- Non-carousel content will be inserted here -->
-      </div>
+      <div class="blog-container"></div>
     </main>
 
     <footer>

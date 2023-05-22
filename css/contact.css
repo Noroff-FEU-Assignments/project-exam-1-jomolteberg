@@ -22,7 +22,10 @@
     line-height: 1.2;
 }
 
-
+.contactUs h3 {
+    margin-top: 2rem;
+    color: var(--color-orange);
+}
 
 .containerContact {
     display: flex;
@@ -36,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
-    margin-top: 5rem;
+    margin-top: 1rem;
     justify-content: center;
     width: 100%;
     padding: 3rem;
@@ -88,4 +91,17 @@ textarea {
   .formRequirement {
     font-size: 0.8rem;
     display: contents;
+  }
+
+  button {
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 3px solid var(--color-black);
+    padding: 0.5rem 1rem;
+    font-family: var(--text-heading);
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
   }

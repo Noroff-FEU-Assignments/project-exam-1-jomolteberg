@@ -11,7 +11,7 @@ export async function loadMorePosts() {
     if (morePosts.length === 0) {
       const blogPostsContainer = document.querySelector(".blog-container");
       const message = document.createElement("p");
-      message.innerText = "No more posts to load.";
+      message.innerText = "No more posts to show.";
       blogPostsContainer.append(message);
 
       const loadMoreButton = document.querySelector("#load-more-button");

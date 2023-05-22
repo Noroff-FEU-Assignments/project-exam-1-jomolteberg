@@ -15,7 +15,7 @@
     />
     
     <script src="../js/blogList.js" defer type="module"></script>
-
+    <script src="./js/components/navBurger.js" defer type="module"> </script>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/media.css" />
     <link rel="stylesheet" href="../css/blogList.css" />
@@ -32,6 +32,11 @@
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </div>
+        <button class="nav-burger" aria-expanded="false">
+          <div class="top-burger"></div>
+          <div class="mid-burger"></div>
+          <div class="bottom-burger"></div>
+        </button>
       </nav>
     </header>
 
@@ -49,7 +54,7 @@
       <h2>Blog posts</h2>
       <div class="blog-container"></div>
       <div id="load-more-container">
-        <button id="load-more-button">Load more posts</button>
+        <button id="load-more-button">Show more posts</button>
     </div>
     
     </main>

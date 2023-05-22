@@ -11,18 +11,35 @@ export async function createCarousel(carouselBlogPosts) {
     return;
   }
 
-  const carouselContent = document.createElement('div');
-  carouselContent.classList.add('carousel-content');
-  carouselContainer.append(carouselContent);
+ // Create the carousel content container
+const carouselContent = document.createElement('div');
+carouselContent.classList.add('carousel-content');
+
+// Create a wrapper for the carousel
+const carouselWrapper = document.createElement('div');
+carouselWrapper.classList.add('carousel-wrapper');
+
+// Append the buttons and content to the wrapper
+carouselWrapper.append(prevButton, carouselContent, nextButton);
+
+// Append the wrapper to the carousel container
+carouselContainer.append(carouselWrapper);
 
   const imageURLs = await Promise.all(
     carouselBlogPosts.map((post) => getBlogImage(post.featured_media))
   );
 
   let startIndex = 0;
-  const postCount = 3;
+  let postCount = 3;
 
   function updateCarousel() {
+    let postCount;
+    if (window.innerWidth < 768) {
+      postCount = 1;
+    } else {
+      postCount = 3;
+    }
+
     carouselContent.innerHTML = "";
     for (let i = 0; i < postCount; i++) {
       const index = (startIndex + i) % carouselBlogPosts.length;

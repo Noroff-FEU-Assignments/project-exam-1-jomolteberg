@@ -28,3 +28,21 @@
     line-height: 1.2;
     font-weight: 500;
 }
+
+#load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#load-more-button {
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 3px solid var(--color-black);
+    padding: 0.5rem 1rem;
+    font-family: var(--text-heading);
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}

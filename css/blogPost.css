@@ -33,6 +33,7 @@
     margin: 3rem auto;
     max-width: 700px;
     font-weight: 500;
+    font-size: 1.2rem;
   }
 
 
@@ -51,18 +52,20 @@
   .modal-content {
     position: relative;
     margin: 15% auto;
-    padding: 20px;
     width: 80%;
     max-width: 700px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     animation-name: zoom;
-    animation-duration: 0.6s;
+    transform: translateX(-15%);
   }
   
   .modal-content img {
-    max-width: 100%;
+    min-width: 900px;
     height: auto;
+    max-width: 100%;
+    object-fit: contain;
   }
+  
   
   
   @keyframes zoom {

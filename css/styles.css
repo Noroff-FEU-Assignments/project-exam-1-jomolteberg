@@ -50,7 +50,7 @@ h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-top: 2rem;
-    text-decoration: underline;
+    text-decoration: underline var(--color-orange);
 }
 
 h3 {
@@ -83,6 +83,7 @@ h3 {
     font-weight: 600;
     color: #fff;
     font-family: var(--text-heading);
+    text-decoration: underline var(--color-orange);
 }
 
 .nav-menu {
@@ -102,6 +103,10 @@ h3 {
 
 #nav-menu_active {
     color: var(--color-orange);
+}
+
+.nav-burger {
+    display: none;
 }
 
 
@@ -162,7 +167,20 @@ h3 {
     margin: 0 auto;
 } 
 
-/* Blog list */
+.successMessage {
+    background-color: white;
+    padding: 1.3rem;
+    border: 3px solid #2bae66ff;
+    color: #2bae66ff;
+    width: fit-content;
+    text-align: center;
+    display: none;
+    font: var(--text-paragraph);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
 
 
 
