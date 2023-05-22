@@ -34,13 +34,19 @@
     color: var(--color-white);
     border: 3px solid var(--color-white);
     padding: 0.5rem 2rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
     font-family: var(--text-heading);
     font-weight: 700;
     font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
+}
+
+.hero-btn:hover {
+    background: var(--color-white);
+    color: var(--color-orange);
+    border: 3px solid var(--color-orange);
 }
 
 .carousel-wrapper {
