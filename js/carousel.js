@@ -11,18 +11,13 @@ export async function createCarousel(carouselBlogPosts) {
     return;
   }
 
- // Create the carousel content container
 const carouselContent = document.createElement('div');
 carouselContent.classList.add('carousel-content');
 
-// Create a wrapper for the carousel
 const carouselWrapper = document.createElement('div');
 carouselWrapper.classList.add('carousel-wrapper');
-
-// Append the buttons and content to the wrapper
 carouselWrapper.append(prevButton, carouselContent, nextButton);
 
-// Append the wrapper to the carousel container
 carouselContainer.append(carouselWrapper);
 
   const imageURLs = await Promise.all(

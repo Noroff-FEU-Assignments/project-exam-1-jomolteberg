@@ -23,7 +23,6 @@ async function getBlogPostPage() {
   const blogPost = await getBlogPost(postId);
   document.title = `Beautiful destinations | ${blogPost.title.rendered}`;
 
-  // Fetch the blog image URL
   const imageURL = await getBlogImage(blogPost.featured_media);
 
   const blogPostContainer = document.createElement("div");
@@ -59,7 +58,6 @@ async function getBlogPostPage() {
 
   document.querySelector(".blogPostContent").append(blogPostContainer);
 
-  // Creating a modal for our image
   const modal = document.createElement("div");
   modal.classList.add("modal");
   modal.style.display = "none";
@@ -67,12 +65,10 @@ async function getBlogPostPage() {
 
   document.body.appendChild(modal);
 
-  // Adding event listener for image click
   img.addEventListener("click", () => {
     modal.style.display = "block";
   });
 
-  // Adding event listener for modal click to hide modal
   modal.addEventListener("click", () => {
     modal.style.display = "none";
   });
