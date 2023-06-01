@@ -46,3 +46,9 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+
+#load-more-button:hover {
+    background: var(--color-white);
+    color: var(--color-orange);
+    border: 3px solid var(--color-orange);
+}

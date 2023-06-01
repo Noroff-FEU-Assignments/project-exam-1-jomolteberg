@@ -88,7 +88,7 @@ textarea {
     display: contents;
   }
 
-  button {
+  .contact-button {
     background: var(--color-white);
     color: var(--color-black);
     border: 3px solid var(--color-black);
@@ -99,4 +99,10 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
+  }
+
+  .contact-button:hover {
+    background: var(--color-white);
+    color: var(--color-orange);
+    border: 3px solid var(--color-orange);
   }
