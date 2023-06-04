@@ -1,6 +1,6 @@
 export function createBlogPostHTML(blogPost, imageURL, container) {
-  
-  const blogPostsContainer = container || document.querySelector(".blog-container");
+  const blogPostsContainer =
+    container || document.querySelector(".blog-container");
 
   const blogPostContainer = document.createElement("div");
   blogPostContainer.classList.add("blog-post");
@@ -21,4 +21,3 @@ export function createBlogPostHTML(blogPost, imageURL, container) {
 
   blogPostsContainer.append(blogPostContainer);
 }
-

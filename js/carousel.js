@@ -1,24 +1,23 @@
-import { createBlogPostHTML } from "./helpers.js";
+import { createBlogPostHTML } from "./createBlogPost.js";
 import { getBlogImage } from "./renderBlogPosts.js";
 
 export async function createCarousel(carouselBlogPosts) {
-
   const carouselContainer = document.querySelector(".carousel-container");
-  const prevButton = document.querySelector('.carousel-prev');
-  const nextButton = document.querySelector('.carousel-next');
+  const prevButton = document.querySelector(".carousel-prev");
+  const nextButton = document.querySelector(".carousel-next");
 
   if (!carouselContainer || !prevButton || !nextButton) {
     return;
   }
 
-const carouselContent = document.createElement('div');
-carouselContent.classList.add('carousel-content');
+  const carouselContent = document.createElement("div");
+  carouselContent.classList.add("carousel-content");
 
-const carouselWrapper = document.createElement('div');
-carouselWrapper.classList.add('carousel-wrapper');
-carouselWrapper.append(prevButton, carouselContent, nextButton);
+  const carouselWrapper = document.createElement("div");
+  carouselWrapper.classList.add("carousel-wrapper");
+  carouselWrapper.append(prevButton, carouselContent, nextButton);
 
-carouselContainer.append(carouselWrapper);
+  carouselContainer.append(carouselWrapper);
 
   const imageURLs = await Promise.all(
     carouselBlogPosts.map((post) => getBlogImage(post.featured_media))
@@ -44,15 +43,17 @@ carouselContainer.append(carouselWrapper);
     }
   }
 
-  prevButton.addEventListener('click', () => {
-    startIndex = (startIndex - postCount + carouselBlogPosts.length) % carouselBlogPosts.length;
+  prevButton.addEventListener("click", () => {
+    startIndex =
+      (startIndex - postCount + carouselBlogPosts.length) %
+      carouselBlogPosts.length;
     updateCarousel();
   });
-  
-  nextButton.addEventListener('click', () => {
+
+  nextButton.addEventListener("click", () => {
     startIndex = (startIndex + postCount) % carouselBlogPosts.length;
     updateCarousel();
   });
-  
+
   updateCarousel();
 }

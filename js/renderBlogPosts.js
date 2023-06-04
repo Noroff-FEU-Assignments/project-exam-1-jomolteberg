@@ -1,4 +1,4 @@
-import { createBlogPostHTML } from "./helpers.js";
+import { createBlogPostHTML } from "./createBlogPost.js";
 import { createCarousel } from "./carousel.js";
 
 const apiBase = "https://beautifuldestinations.jomolteberg.no/";
@@ -47,8 +47,3 @@ export async function blogPostsPage(initialPostCount = 0) {
   const carouselBlogPosts = blogPosts;
   createCarousel(carouselBlogPosts);
 }
-
-
-
-
-

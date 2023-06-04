@@ -4,30 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautiful destinations | Home page</title>
+    <meta name="description" content="Beautiful Destinations is a travel blog sharing experiences of travel enthusiasts to help you plan your next adventure. Explore the world together with us." />
+    <title>Beautiful Destinations | Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@400;500;700&family=Secular+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@400;500;700&family=Secular+One&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <!-- Hotjar Tracking Code for Beautiful destinations -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3403968,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
     <script src="./js/main.js" defer type="module"></script>
     <script src="./js/components/navBurger.js" defer type="module"> </script>
   </head>
@@ -35,10 +19,10 @@
     <header>
       <nav class="nav-container">
         <div class="logo">
-          <a href="index.html"> Beautiful destinations </a>
+          <a href="../index.html"> Beautiful destinations </a>
         </div>
         <div class="nav-menu">
-          <li><a href="./index.html" id="nav-menu_active">Home</a></li>
+          <li><a href="../index.html" id="nav-menu_active">Home</a></li>
           <li><a href="./blogList.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -50,9 +34,8 @@
         </button>
       </nav>
     </header>
-
     <main>
-      <div class="hero-container">
+      <section class="hero-container">
         <div class="hero-header">
           <h1>EXPLORE THE WORLD TOGETHER</h1>
         </div>
@@ -62,34 +45,35 @@
             love to explore the world. We are here to share our experiences and
             help you plan your next trip.
           </p>
-        </div>
+        </section>
         <a href="./blogList.html" class="hero-btn">Enter</a>
       </div>
-
-      <div class="blog-latest">
+      <section class="blog-latest">
         <h2>Latest posts</h2>
-      </div>
-      <div class="carousel-container">
+        <!-- Content of the latest blog posts should be here -->
+      </section>
+      <section class="carousel-container">
         <button class="carousel-prev">&#10094;</button>
-        <div class="carousel-content"></div>
+        <div class="carousel-content">
+          <!-- Carousel content should be here -->
+        </div>
         <button class="carousel-next">&#10095;</button>
-      </div>
-      
-
+      </section>
       <h2>Featured posts</h2>
-      <div class="blog-container"></div>
+      <section class="blog-container">
+        <!-- Content of the featured blog posts should be here -->
+      </section>
     </main>
-
     <footer>
       <div class="footer-container">
         <div class="footer-copyright">
           <p>&copy; jomolteberg</p>
         </div>
-        <div class="footer-menu">
+        <ul class="footer-menu">
           <li><a href="./blogList.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </footer>
   </body>

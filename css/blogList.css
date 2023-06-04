@@ -1,54 +1,55 @@
 .hero-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../images/california-1.jpg) no-repeat center center/cover;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    margin-bottom: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(../images/california-1.jpg) no-repeat center center/cover;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
-  
+
 .hero-container * {
-    margin: 0 auto;
-    text-align: center;
-    color: var(--color-white);
-    max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 550px;
 }
 
 .hero-header {
-    font-size: 1.5rem;
-    font-family: var(--text-hero);
-    line-height: 1.2;
+  font-size: 1.5rem;
+  font-family: var(--text-hero);
+  line-height: 1.2;
 }
 
 .hero-text {
-    font-size: 1rem;
-    font-family: var(--text-paragraph);
-    line-height: 1.2;
-    font-weight: 500;
+  font-size: 1rem;
+  font-family: var(--text-paragraph);
+  line-height: 1.2;
+  font-weight: 500;
 }
 
 #load-more-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 #load-more-button {
-    background: var(--color-white);
-    color: var(--color-black);
-    border: 3px solid var(--color-black);
-    padding: 0.5rem 1rem;
-    font-family: var(--text-heading);
-    font-weight: 700;
-    font-size: 1.4rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  background: var(--color-white);
+  color: var(--color-black);
+  border: 3px solid var(--color-black);
+  padding: 0.5rem 1rem;
+  font-family: var(--text-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 #load-more-button:hover {
-    background: var(--color-white);
-    color: var(--color-orange);
-    border: 3px solid var(--color-orange);
+  background: var(--color-white);
+  color: var(--color-orange);
+  border: 3px solid var(--color-orange);
 }

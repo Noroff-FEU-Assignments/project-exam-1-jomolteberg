@@ -9,7 +9,6 @@ const nameError = document.querySelector("#nameError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 
-
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
