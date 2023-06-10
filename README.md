@@ -2,7 +2,7 @@
 
 ![image](./images/beautifuldestinations-screenshot.png)
 
-CBeautiful Destinations is a captivating travel blog designed to inspire and inform travelers. The blog features engaging articles and stunning visuals, capturing the beauty of various destinations around the world. This website is a school project created for the Front-End Development course at Noroff School of Technology and Digital Media.
+Beautiful Destinations is a captivating travel blog designed to inspire and inform travelers. The blog features engaging articles and stunning visuals, capturing the beauty of various destinations around the world. This website is a school project created for the Front-End Development course at Noroff School of Technology and Digital Media.
 
 ## Description
 
